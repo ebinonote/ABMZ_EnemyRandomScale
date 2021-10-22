@@ -13,19 +13,21 @@
 
 ## 敵キャラのメモ：
 
-### &lt;scale:x&gt;
+<dl>
+<dt>&lt;scale:x&gt;</dt>
 
-大きさをx倍にし、能力値を変化させます。小数点が使えます。
-maxScale、minScaleと併用するとscaleが優先されます。
+<dd>大きさをx倍にし、能力値を変化させます。小数点が使えます。
+maxScale、minScaleと併用するとscaleが優先されます。</dd>
 
-### &lt;maxScale:x&gt;<br>
-&lt;minScale:y&gt;
+<dt>&lt;maxScale:x&gt;<br>
+&lt;minScale:y&gt;</dt>
 
-大きさをminScale～maxScaleの中のランダムにし、能力値を変化させます。
+<dd>大きさをminScale～maxScaleの中のランダムにし、能力値を変化させます。
 小数点が使えます。
 minScaleを省略するとminScaleは1になります。
-maxScaleを省略するとmaxScaleは1になります。
+maxScaleを省略するとmaxScaleは1になります。</dd>
 
+</dl>
 
 ### 【大きさ決定計算式】
 
@@ -38,26 +40,30 @@ Math.floor(((Math.random()(maxScale - minScale)) + (Math.random()(maxScale - min
 
 ## プラグインコマンド
 
+<dl>
 
-### nextEnemyScales 敵キャラ1の大きさ 敵キャラ2の大きさ ... 敵キャラ8の大きさ
+<dt>nextEnemyScales 敵キャラ1の大きさ 敵キャラ2の大きさ ... 敵キャラ8の大きさ</dt>
 
-次の戦闘で、敵キャラの大きさを指定します。
+<dd>次の戦闘で、敵キャラの大きさを指定します。
 0を指定すると、通常と同じく敵キャラのタグ通りになります。
 引数を省略すると0になります。
-設定した大きさは戦闘が終了するとリセットされます。
+設定した大きさは戦闘が終了するとリセットされます。</dd>
 
 
-### 例）<br>
-nextEnemyScales 2.5 0 1
+<dd>例）<br>
+nextEnemyScales 2.5 0 1</dd>
 
-次の戦闘で、敵キャラの大きさを、敵キャラ1は2.5倍、敵キャラ2は通常通り、
+<dd>次の戦闘で、敵キャラの大きさを、敵キャラ1は2.5倍、敵キャラ2は通常通り、
 敵キャラ3は1倍にします。
-敵キャラ4以降は通常通りです。
+敵キャラ4以降は通常通りです。</dd>
 
 
-### clearEnemyScales
+<dt>clearEnemyScales</dt>
 
-次の戦闘の敵キャラの大きさの設定をリセットします。
+<dd>次の戦闘の敵キャラの大きさの設定をリセットします。</dd>
+
+</dl>
+
 
 
 ## デフォルトの計算式の意図の説明
